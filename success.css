@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+--Tomato: hsl(4, 100%, 67%);
+--DarkSlateGrey: hsl(234, 29%, 20%);
+--CharcoalGrey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+--fsemi :400;
+--fbold: 700;
+--family :"Roboto";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: var(--family);
+}
+
+.main-div{
+  position: relative;
+}
+
+.hi{
+   color: white;
+}
+
+.dismiss-div{
+    background-color: var(--DarkSlateGrey);
+    height: 40px;
+    color: var(--White);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    border: 0px;
+}
+
+@media (min-width: 900px) {
+    body{
+        background-color: var(--CharcoalGrey)!important;
+    }
+    .main-main{
+        height: 90vh;
+        width: 50%;
+        border-radius: 20px;
+        background-color:var(--White) ;
+    }
+    .dismiss-div{
+        background-color: var(--DarkSlateGrey);
+        height: 40px;
+        color: var(--White);
+        border-radius: 5px;
+        bottom: 20%;
+    }
+}

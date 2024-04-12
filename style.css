@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+--Tomato: hsl(4, 100%, 67%);
+--DarkSlateGrey: hsl(234, 29%, 20%);
+--CharcoalGrey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+--fsemi :400;
+--fbold: 700;
+--family :"Roboto";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: var(--family);
+}
+.div-image{
+    background-image: url("./assets/images/illustration-sign-up-mobile.svg");
+    background-size: cover;
+    /* background-size: contain; */
+    height: 35vh; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+section h1{
+    font-size:40px;
+    font-weight: var(--fbold);
+    color: var(--CharcoalGrey);
+}
+
+section p{
+    font-size: 16px;
+    color: var(--CharcoalGrey);
+    font-weight: var(--fsemi);
+}
+span{
+    color: var(--CharcoalGrey);
+    font-size: 16px;
+}
+label{
+    font-size: 13px;
+    color: var(--CharcoalGrey);
+    font-weight: var(--fbold);
+}
+.form-control:focus{
+    box-shadow: none !important;
+    border: 1px solid blue;
+}
+.error{
+    color: var(--Tomato);
+    font-size: 12px;
+}
+.success{
+    background-color: var(--Tomato);
+}
+.subscribe-div{
+    background-color: var(--DarkSlateGrey);
+    height: 40px;
+    color: var(--White);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border: 0px;
+}
+input ::placeholder{
+    color: var(--Grey);
+}
+
+@media (min-width: 768px) and (max-width: 900px){
+    
+  } 
+  
+  @media (min-width: 900px) {
+    
+    body{
+        background-color: var(--CharcoalGrey) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .desktop-main{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--White);
+        flex-direction: row-reverse;
+        height: 90vh;
+        width: 50%;
+        border-radius: 20px;
+        background-color:var(--White) ;
+    } 
+
+    .div-image{
+        display: block !important;
+        background-image: url("./assets/images/illustration-sign-up-desktop.svg");
+        /* background-size: cover; */
+        height: 75vh; 
+        /* border-bottom-left-radius: 20px; */
+        /* border-bottom-right-radius: 20px; */
+        width: 45%;
+    }  
+    section{
+        
+        width: 45% !important;
+        height: 60vh;
+    } 
+
+  }
